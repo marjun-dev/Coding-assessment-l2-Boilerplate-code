@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 8px;
+}
+.heading {
+    text-align: center;
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+.tabs-box {
+    background-color: #f7f7f7;
+    padding: 4px 30px;
+    border-radius: 7px;
+}
+.tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1px;
+    margin: auto;
+
+}
+.tab {
+    cursor: pointer;
+    padding: 10px 160px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    margin: 0 10px;
+}
+.tab.active {
+    background-color: #000;
+    color: #fff;
+    
+}
+.products {
+    display: none;
+}
+.products.active {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.product-card {
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+}
+.product-image {
+    width: 220px;
+    height: 200px;
+    background-color: #eee;
+    margin-bottom: 10px;
+}
+.product-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.product-vendor {
+    color: #555;
+    margin-bottom: 10px;
+}
+.product-compare-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 10px;
+}
+.product-price {
+    
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product-discount {
+    color: red;
+    margin-bottom: 10px;
+}
+.add-to-cart {
+    display: inline-block;
+    padding: 10px 80px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
